@@ -5,6 +5,7 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-border: #ccc;
+  --color-text: #fff;
   --border-radius: 30px;
 }
 
@@ -108,12 +109,12 @@ a {
 
 .badge--primary {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-text);
 }
 
 .badge--secondary {
   background: var(--color-secondary);
-  color: #fff;
+  color: var(--color-text);
 }
 
 .badge--small {
@@ -197,7 +198,7 @@ a {
 
 .btn--primary {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-text);
 }
 
 .btn--primary:hover {
@@ -206,7 +207,7 @@ a {
 
 .btn--secondary {
   background: var(--color-secondary);
-  color: #fff;
+  color: var(--color-text);
 }
 
 .btn--secondary:hover {
@@ -215,7 +216,7 @@ a {
 
 .btn--accent {
   background: var(--color-accent);
-  color: #fff;
+  color: var(--color-text);
 }
 
 .btn--accent:hover {
@@ -228,14 +229,14 @@ a {
 }
 
 .btn--outline {
-  background: #fff;
+  background: var(--color-text);
   border: 2px solid var(--color-headings);
   color: var(--color-headings);
 }
 
 .btn--outline:hover {
   background: var(--color-headings);
-  color: #fff;
+  color: var(--color-text);
 }
 
 @media screen and (min-width: 1024px) {
@@ -277,4 +278,27 @@ a {
   .input {
     font-size: 1.5rem;
   }
+}
+
+/* Cards */
+
+.card {
+  box-shadow: 0 0 20px 20px #f3f3f3;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: var(--color-text);
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: var(--color-text);
 }
