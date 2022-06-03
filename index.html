@@ -14,15 +14,38 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <div class="grid grid--cols-2">
-      <div style="height: 100px; background: gold"></div>
-      <div style="height: 100px; background: dodgerblue"></div>
-    </div>
-    <div class="grid grid--cols-3">
-      <div style="height: 100px; background: gold"></div>
-      <div style="height: 100px; background: dodgerblue"></div>
-      <div style="height: 100px; background: tomato"></div>
+  <body style="padding: 5rem">
+    <div class="card testimonial">
+      <div class="grid grid--cols-2">
+        <div class="testimonial__image">
+          <span class="icon-container icon-container__accent">
+            <svg class="icon icon--white icon--small">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+            </svg> </span
+          ><img src="images/testimonial.jpg" alt="A happy, smiling customer." />
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ipsa
+            reprehenderit eius debitis rem nobis, numquam sapiente at. Eligendi
+            laborum alias eius consequuntur provident id tempora nam, vero totam
+            itaque.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                  <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">Skelton Skelter</h3>
+                <p class="quote__organization">Skelterfy Company</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
     </div>
   </body>
 </html>
